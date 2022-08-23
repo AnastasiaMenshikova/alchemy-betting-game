@@ -11,7 +11,6 @@
     "eslint-plugin-prettier": "^3.4.0"
   },
   "dependencies": {
-    "@alch/alchemy-web3": "^1.4.6",
     "@eth-optimism/hardhat-ovm": "^0.2.2",
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
     "@nomiclabs/hardhat-etherscan": "^2.1.7",
@@ -36,8 +35,6 @@
     "test": "hardhat test",
     "compile": "hardhat compile",
     "deploy": "hardhat deploy --network goerliOptimism",
-    "bet": "hardhat run scripts/casino.js",
-    "verify": "hardhat etherscan-verify --network goerliOptimism",
     "coverage": "hardhat coverage",
     "slither": "slither . --solc-remaps '@openzeppelin=node_modules/@openzeppelin' --exclude naming-convention,external-function,low-level-calls"
   }
