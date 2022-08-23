@@ -62,6 +62,10 @@ contract Casino {
     // Called by sideB to continue
     function acceptBet(uint _commitmentA, uint _commitmentB) external payable {
         require(
+            proposedBet[_commitmentA].sideA != address(0),
+            "This bet doesn't exist"
+        );
+        require(
             !proposedBet[_commitmentA].accepted,
             "Bet has already been accepted"
         );
