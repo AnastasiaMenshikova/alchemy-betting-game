@@ -4,7 +4,7 @@
 
 ### How to install and use
 
-To set up the repository and run the marketplace locally, run the below
+To set up the repository, run the below
 
 ```bash
 
